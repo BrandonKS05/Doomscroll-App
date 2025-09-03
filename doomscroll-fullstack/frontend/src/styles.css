@@ -1,0 +1,41 @@
+:root{
+  --bg:#f6f6f6; --surface:#fff; --border:#e6e6e6;
+  --text:#1f1f1f; --muted:#6b6b6b;
+  --accent:#4f46e5; --accent2:#4338ca;
+  --shadow:0 1px 2px rgba(0,0,0,.04),0 4px 12px rgba(0,0,0,.06);
+  --r-lg:16px; --r-md:12px;
+}
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+body{margin:0;background:var(--bg);color:var(--text);
+  font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
+.header{position:sticky;top:0;z-index:10;background:var(--surface);
+  border-bottom:1px solid var(--border);padding:14px 16px;text-align:center}
+.header h1{margin:0;font-size:20px;font-weight:700;letter-spacing:-.01em}
+.app{max-width:680px;margin:0 auto;padding:24px 16px 64px}
+.stack{display:grid;gap:20px}
+.card{background:var(--surface);border:1px solid var(--border);
+  border-radius:var(--r-lg);box-shadow:var(--shadow);padding:16px}
+.row{display:flex;gap:12px;align-items:center}
+.avatar{width:40px;height:40px;border-radius:50%;
+  object-fit:cover;filter:grayscale(1);border:1px solid var(--border)}
+.textarea{width:100%;resize:none;padding:12px 14px;border-radius:var(--r-md);
+  border:1px solid var(--border);background:#fafafa;font-size:14px;outline:none}
+.textarea:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(79,70,229,.12);background:#fff}
+.input{width:100%;padding:10px 12px;border-radius:10px;border:1px solid var(--border);background:#fafafa;font-size:14px;outline:none}
+.input:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(79,70,229,.12);background:#fff}
+.actions{display:flex;gap:12px;justify-content:flex-end}
+.btn{border:0;border-radius:12px;padding:8px 14px;font-size:14px;background:#f1f1f1;cursor:pointer}
+.btn:hover{filter:brightness(.97)}
+.btn--primary{background:var(--accent);color:#fff}
+.btn--primary:hover{background:var(--accent2)}
+.iconbtn{display:inline-flex;gap:6px;align-items:center;padding:6px 8px;border:0;background:transparent;
+  color:var(--muted);border-radius:10px;cursor:pointer}
+.iconbtn:hover{color:var(--accent);background:rgba(79,70,229,.06)}
+.meta{font-size:12px;color:var(--muted)}
+.content{font-size:14px;line-height:1.6;margin-top:12px}
+.post{scroll-margin-top:72px}
+.hashtag{color:var(--accent); text-decoration:none}
+@media (max-width: 480px){
+  .app{padding:16px 12px 56px}
+}
