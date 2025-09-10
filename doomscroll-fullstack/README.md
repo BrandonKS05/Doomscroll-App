@@ -1,7 +1,7 @@
 # Doomscroll (Change++ Coding Challenge)
 
-**Author:** YOUR NAME HERE  
-**Email:** YOUR VANDERBILT EMAIL HERE
+**Author:** Brandon Lee  
+**Email:** jin.woo.lee@vanderbilt.edu
 
 A minimal, polished social app for doomscrolling: create posts, like posts, and leave comments.  
 Monotone aesthetic, responsive, clean code. Full-stack: **React (Vite) + Express + SQLite**.
